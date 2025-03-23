@@ -11,3 +11,7 @@ function verify() {
         result.style.color = "red";
     }
 }
+
+function gratification() {
+    document.getElementById("message").innerHTML = "Welcome to the club!";
+}

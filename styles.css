@@ -1,4 +1,9 @@
 body {
+  background-image: url('https://i.pinimg.com/736x/dd/6e/56/dd6e560e7cf4abf58f71fb2a2feeb91c.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   margin: 0;
   padding: 0;
   background-color: #1b1b32;
@@ -21,7 +26,7 @@ body {
   justify-content: center;
   background-color: #0a0a23;
   margin: 10px 10px 10px 10px;
-  padding: 20px;
+  padding: 40px;
   border: solid 1px;
 }
 
@@ -34,7 +39,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 2rem;
+  margin-top: 4rem;
 }
 
 .fit {
@@ -42,6 +47,11 @@ body {
   border: solid black; 
   border-radius: 5px;
   width: 40%;
+}
+
+.fit:hover {
+  box-shadow: 2px 2px 8px gray;
+  cursor: pointer; 
 }
 
 h2 {
@@ -55,8 +65,10 @@ form {
   width: 60vw;
   max-width: 500px;
   min-width: 300px;
-  padding-bottom: 2em;
+  padding-bottom: 2rem;
+  padding-top: 50px;
 }
+
 
 fieldset {
   border: none;
@@ -64,9 +76,6 @@ fieldset {
   border-bottom: 3px solid #3b3b4f;
 }
 
-fieldset:last-of-type {
-  border-bottom: none;
-}
 
 label {
   display: block;

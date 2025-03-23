@@ -8,7 +8,7 @@
   </head>
   <body>
     <div class="lado esquerdo">
-      <h1> HONDA FIT CLUB</h1>
+      <h1>HONDA FIT CLUB</h1>
       <img class="fit"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSioZ1mnHIlUque166tCzYzSUGwcv0YUtg8TA&s" alt="Honda Fit"><br>
       <img class="fit"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrf07mJxuUHBzUpyiHkN32ZkfumMFlRxNl5w&s" alt="Honda Fit"><br>
       <img class="fit"src="https://cars.japanesecartrade.com/vehicle_image/10201029_200211.jpg" alt="Honda Fit"><br>
@@ -22,10 +22,22 @@
               <label for="last-name">Last Name: <input id="last-name" name="last-name" type="text" required /></label>
               <label for="email">Email: <input id="email" name="email" type="email" required /></label>
               <label for="phone-number">Phone Number: <input id="phone-number" name="phone-number" type="tel" required /></label>
+              <label for="model">What version do you have? 
+                <select required>
+                  <option>Select</option>
+                  <option>GD1 1.4l 8v iDSI</option>
+                  <option>GD1 1.5l 16v iVTEC</option>
+                  <option>GD2 1.4l 16v iVTEC</option>
+                  <option>GD3 1.5l 16v iVTEC</option>
+                  <option>Other</option>
+                </select>
+              </label>
               <label for="new-password">Password: <input id="new-password" name="new-password" type="password" required /></label>
               <label for="confirm-password">Confirm Password: <input id="confirm-password" name="confirm-password" type="password" required oninput="verify()"></label>
               <p id="result"></p>
+              <label for="age"><input id="age"type="checkbox" required class="inline">I am 18 years old or above</label>
             </fieldset>
+              <p id="message"></p>
             <input type="submit" value="Create Account" onclick="gratification()"/>
             <footer for="log-in"> Already have an account? <a href="">Log in</a></a></footer>
           </form>
