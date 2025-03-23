@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Survey Form</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
   </head>
   <body>
     <div class="lado esquerdo">
@@ -22,9 +23,10 @@
               <label for="email">Email: <input id="email" name="email" type="email" required /></label>
               <label for="phone-number">Phone Number: <input id="phone-number" name="phone-number" type="tel" required /></label>
               <label for="new-password">Password: <input id="new-password" name="new-password" type="password" required /></label>
-              <label for="confirm-password">Confirm Password: <input id="confirm-password" name="confirm-password" type="password" required /></label>
+              <label for="confirm-password">Confirm Password: <input id="confirm-password" name="confirm-password" type="password" required onchange="verify()"></label>
+              <p id="result"></p>
             </fieldset>
-            <input type="submit" value="Create Account" />
+            <input type="submit" value="Create Account" onclick="gratification()"/>
             <footer for="log-in"> Already have an account? <a href="">Log in</a></a></footer>
           </form>
     </div>

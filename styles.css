@@ -25,6 +25,10 @@ body {
   border: solid 1px;
 }
 
+.lado.esquerdo:hover {
+  box-shadow: #1b1b32;
+}
+
 .lado.direito {
   display: flex;
   flex-direction: column;
@@ -37,10 +41,6 @@ body {
   border: solid black; 
   border-radius: 5px;
   width: 40%;
-}
-
-.fit:hover {
-  box-shadow: beige;
 }
 
 h2 {
